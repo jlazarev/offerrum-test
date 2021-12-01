@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="nootris">
+  <title>Nootris</title>
+  <link rel="preload" href="fonts/rubik-v14-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/rubik-v14-latin_cyrillic-700.woff2" as="font">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header page-header--close-menu page-header--nojs">
+    <div class="page-header__wrapper wrapper">
+      <a class="page-header__logo">
+        <span class="visually-hidden">Nootris logo</span>
+        <svg width="120" height="35">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <button class="page-header__menu-button" type="button">
+        <span class="visually-hidden">toggle menu</span>
+        <svg class="page-header__open-btn" width="25" height="18">
+          <use xlink:href="img/sprite_auto.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <nav class="page-header__menu">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">
+              <span>FAQ</span>
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">
+              <span>Оплата и доставка</span>
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">
+              <span>Возврат</span>
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">
+              <span>Иследования</span>
+            </a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="#">
+              <span>Личный кабинет</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-header__info">
+        <a class="page-header__phone" href="tel:888006000990">
+          <span>8 8 (800) 600-09-90</span>
+        </a>
+
+        <a class="page-header__basket" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/sprite_auto.svg#icon-basket"></use>
+          </svg>
+          <span class="page-header__basket-counter">1</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Nootris</h1>
+
+    <section class="promo">
+      <div class="promo__wrapper wrapper">
+        <h2 class="promo__title">активируй<br> иммунитет!</h2>
+
+        <p class="promo__paragraph">
+          Всего пять секунд в день помогут укрепить иммунитет
+          и повысить защитные силы организма
+        </p>
+
+        <h3 class="promo__sup-title">nootris помогает</h3>
+
+        <p class="promo__sup-paragraph">
+          Вашему организму во время пандемии
+          и cезонных простуд
+        </p>
+
+        <div class="promo__img-box">
+          <picture>
+            <source type="image/webp" srcset="img/nootris@1x.webp 1x, img/nootris@2x.webp 2x">
+            <img src="img/nootris@1x.png" srcset="img/nootris@2x.jpg 2x" alt="nootris">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__wrapper wrapper">
+        <h2 class="advantages__title">
+          получи защиту иммунитета<br>
+          <span>со скидкой -15% первым!</span>
+        </h2>
+
+        <div class="advantages__price">
+          <span class="advantages__old-price">750&#8381;</span>
+          <span class="advantages__new-price">690&#8381;</span>
+        </div>
+
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__img-box">
+              <picture>
+                <source type="image/webp" srcset="img/ginger@1x.webp 1x, img/ginger@2x.webp 2x">
+                <img src="img/ginger@1x.png" srcset="img/ginger@2x.jpg 2x" alt="ginger">
+              </picture>
+            </div>
+
+            <p class="advantages__description">
+              Содержит<br>
+              <span>имбирь</span>
+            </p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img-box">
+              <picture>
+                <source type="image/webp" srcset="img/nootris-small@1x.webp 1x, img/nootris-small@2x.webp 2x">
+                <img src="img/nootris-small@1x.png" srcset="img/nootris-small@2x.jpg 2x" alt="nootris-small">
+              </picture>
+            </div>
+
+            <p class="advantages__description advantages__description--delivery">
+              + Бесплатная доставка<br>
+              <span>Специальная цена</span>
+            </p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img-box">
+              <picture>
+                <source type="image/webp" srcset="img/virus@1x.webp 1x, img/virus@2x.webp 2x">
+                <img src="img/virus@1x.png" srcset="img/virus@2x.png 2x" alt="virus">
+              </picture>
+            </div>
+
+            <p class="advantages__description">
+              Нейтрализует<br>
+              <span>вирусы</span>
+            </p>
+          </li>
+        </ul>
+
+        <a href="#" class="advantages__btn-order">
+          Оформить заказ!
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
